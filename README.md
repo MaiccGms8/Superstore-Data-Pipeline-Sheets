@@ -19,7 +19,7 @@ Este projeto simula um cenário real de análise de dados de uma varejista globa
 *Automação de limpeza de dados utilizando ArrayFormula para escala.*
 
 ### 02. Processamento e Métricas
-![Processamento](./screenshots/02-processamento-dados.png)
+![Processamento](02-etl-processamento-limpeza.png)
 *Criação de tabelas auxiliares e lógica de BI para suporte ao Dashboard.*
 
 ### 03. Dashboard Estratégico Final
