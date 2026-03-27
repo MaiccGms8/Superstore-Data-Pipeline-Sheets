@@ -5,7 +5,7 @@ Pipeline de dados e Dashboard dinâmico desenvolvido inteiramente no Google Shee
 [🔗 Acesse a Planilha Interativa aqui](https://docs.google.com/spreadsheets/d/1toAkrp5Wl9611jqNeFpFpNJfVPJKN1I3lznShc-DU-Q/edit?usp=sharing)
 
 ## 🚀 Sobre o Projeto
-Este projeto simula um cenário real de análise de dados de uma varejista global (Sample Superstore). O objetivo foi transformar dados brutos em insights estratégicos através de um fluxo automatizado, demonstrando como o Google Sheets pode ser uma ferramenta poderosa de Engenharia de Dados.
+Este projeto simula um cenário real de análise de dados de uma varejista global (Sample Superstore). O objetivo foi transformar dados brutos em insights estratégicos através de um fluxo automatizado.
 
 ### Etapas do Pipeline:
 1. **Ingestão:** Conexão com a base de dados bruta (dataset de 9k+ linhas).
@@ -16,10 +16,10 @@ Este projeto simula um cenário real de análise de dados de uma varejista globa
 
 ### 01. Ingestão e Tratamento (ETL)
 ![Base Bruta](./screenshots/01-base-bruta-ingestao.png)
-*Automação de limpeza de dados utilizando ArrayFormula para escala.*
+*Automação de limpeza de dados utilizando ArrayFormula.*
 
 ### 02. Processamento e Métricas
-![Processamento](./screenshots/02-processamento.png)
+![Processamento](./screenshots/02-etl-processamento-limpeza.png)
 *Criação de tabelas auxiliares e lógica de BI para suporte ao Dashboard.*
 
 ### 03. Dashboard Estratégico Final
@@ -28,10 +28,9 @@ Este projeto simula um cenário real de análise de dados de uma varejista globa
 
 ## 🛠️ Tecnologias e Funções Utilizadas
 * **Engine:** Google Sheets (Lógica de Business Intelligence).
-* **Matrizes Dinâmicas (`ARRAYFORMULA`):** Processamento de dados em massa sem necessidade de arrastar fórmulas.
+* **Matrizes Dinâmicas (`ARRAYFORMULA`):** Processamento de dados em massa.
 * **Consultas Dinâmicas (`FILTER` & `QUERY`):** Motor de busca para atualização automática dos gráficos.
-* **Data Cleaning:** Padronização com `TRIM`, `UPPER` e tratamento de erros com `IFERROR`.
-* **UX Design:** Interface limpa, focada em clareza visual para tomada de decisão.
+* **Data Cleaning:** Padronização com `TRIM`, `UPPER` e `IFERROR`.
 
 ## 💾 Sobre os Dados
 A base de dados bruta utilizada neste projeto está disponível na pasta `/data` deste repositório (**Sample - Superstore.csv**).
