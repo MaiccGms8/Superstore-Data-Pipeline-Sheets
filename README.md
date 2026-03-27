@@ -1,28 +1,40 @@
-# 📊 Superstore Data Pipeline - Google Sheets
+# Superstore-Data-Pipeline-Sheets 📊
 
-Este repositório contém um pipeline de dados completo desenvolvido no Google Sheets, simulando um ambiente real de Business Intelligence. O projeto abrange desde a ingestão de dados brutos até a entrega de um dashboard interativo.
+Pipeline de dados e Dashboard dinâmico desenvolvido inteiramente no Google Sheets, focado em análise de performance de vendas e automação de processos de BI.
 
-## 📁 Estrutura do Projeto
+[🔗 Acesse a Planilha Interativa aqui](https://docs.google.com/spreadsheets/d/1toAkrp5Wl9611jqNeFpFpNJfVPJKN1I3lznShc-DU-Q/edit?usp=sharing)
 
-### 1. Ingestão e Estruturação (`Base_Bruta`)
-Os dados originais em formato CSV foram processados e estruturados para garantir a integridade de 21 atributos de vendas, permitindo análises granulares por região, categoria e tempo.
-![Base Bruta](./screenshots/01-base-bruta-ingestao.jpg)
+## 🚀 Sobre o Projeto
+Este projeto simula um cenário real de análise de dados de uma varejista global (Sample Superstore). O objetivo foi transformar dados brutos em insights estratégicos através de um fluxo automatizado, demonstrando como o Google Sheets pode ser uma ferramenta poderosa.
 
-### 2. Transformação e Limpeza (ETL) (`ETL_Limpeza`)
-Nesta etapa, apliquei lógica de processamento automatizado via **Matrizes Dinâmicas (`ARRAYFORMULA`)**:
-* **Sanitização:** Limpeza de strings com `UPPER` e `TRIM` para padronização de nomes de clientes.
-* **Feature Engineering:** Extração automática de metadados como `Ano_Pedido` e `Prefixo_Pais`.
-![ETL Limpeza](./screenshots/02-etl-processamento-limpeza.png)
+### Etapas do Pipeline:
+1. **Ingestão:** Conexão com a base de dados bruta (dataset de 9k+ linhas).
+2. **ETL (Processamento):** Limpeza, padronização e criação de colunas calculadas.
+3. **Visualização:** Dashboard interativo com filtros dinâmicos.
 
-### 3. Dashboard Interativo (`Analise_Dinamica`)
-O produto final é um dashboard dinâmico que utiliza a função `FILTER` conectada a parâmetros de entrada:
-* **Interface:** Design "Clean" com remoção de linhas de grade e congelamento de cabeçalhos.
-* **KPIs:** Visualização de vendas e lucros formatada para tomada de decisão rápida.
-![Dashboard](./screenshots/03-dashboard-analise-dinamica.jpg)
+## 📸 Demonstração do Fluxo
+
+### 01. Ingestão e Tratamento (ETL)
+![Base Bruta](./screenshots/01-base-bruta-ingestao.png)
+*Automação de limpeza de dados utilizando ArrayFormula para escala.*
+
+### 02. Processamento e Métricas
+![Processamento](./screenshots/02-processamento-dados.png)
+*Criação de tabelas auxiliares e lógica de BI para suporte ao Dashboard.*
+
+### 03. Dashboard Estratégico Final
+![Dashboard](./screenshots/03-dashboard-analise-dinamica.png)
+*Painel interativo com indicadores de vendas por categoria e região.*
+
+## 🛠️ Tecnologias e Funções Utilizadas
+* **Engine:** Google Sheets (Lógica de Business Intelligence).
+* **Matrizes Dinâmicas (`ARRAYFORMULA`):** Processamento de dados em massa sem necessidade de arrastar fórmulas.
+* **Consultas Dinâmicas (`FILTER` & `QUERY`):** Motor de busca para atualização automática dos gráficos.
+* **Data Cleaning:** Padronização com `TRIM`, `UPPER` e tratamento de erros com `IFERROR`.
+* **UX Design:** Interface limpa, focada em clareza visual para tomada de decisão.
+
+## 💾 Sobre os Dados
+A base de dados bruta utilizada neste projeto está disponível na pasta `/data` deste repositório (**Sample - Superstore.csv**).
 
 ---
-## 🎓 Sobre o Autor
-**Maicon Henrique**
-📍 Campina Grande - PB
-🎓 Graduando em Ciência de Dados na **UEPB**
-🎯 Foco em: Data Analytics, ETL e Business Intelligence.
+**Desenvolvido por Maicon Henrique de Oliveira Gomes** Estudante de Tecnologia em Ciência de Dados - UEPB | Campina Grande, PB
