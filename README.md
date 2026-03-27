@@ -5,7 +5,7 @@ Pipeline de dados e Dashboard dinâmico desenvolvido inteiramente no Google Shee
 [🔗 Acesse a Planilha Interativa aqui](https://docs.google.com/spreadsheets/d/1toAkrp5Wl9611jqNeFpFpNJfVPJKN1I3lznShc-DU-Q/edit?usp=sharing)
 
 ## 🚀 Sobre o Projeto
-Este projeto simula um cenário real de análise de dados de uma varejista global (Sample Superstore). O objetivo foi transformar dados brutos em insights estratégicos através de um fluxo automatizado, demonstrando como o Google Sheets pode ser uma ferramenta poderosa.
+Este projeto simula um cenário real de análise de dados de uma varejista global (Sample Superstore). O objetivo foi transformar dados brutos em insights estratégicos através de um fluxo automatizado, demonstrando como o Google Sheets pode ser uma ferramenta poderosa de Engenharia de Dados.
 
 ### Etapas do Pipeline:
 1. **Ingestão:** Conexão com a base de dados bruta (dataset de 9k+ linhas).
@@ -19,7 +19,7 @@ Este projeto simula um cenário real de análise de dados de uma varejista globa
 *Automação de limpeza de dados utilizando ArrayFormula para escala.*
 
 ### 02. Processamento e Métricas
-![Processamento](02-etl-processamento-limpeza.png)
+![Processamento](./screenshots/02-processamento.png)
 *Criação de tabelas auxiliares e lógica de BI para suporte ao Dashboard.*
 
 ### 03. Dashboard Estratégico Final
